@@ -1,5 +1,7 @@
 iornn-depparse
 ==============
+# Update
+1. MSTParser now can producing top-K depparses with 1st order
 
 A Lua implementation of the reranking-based dependency parser using inside-outside recursive neural networks described in
 
