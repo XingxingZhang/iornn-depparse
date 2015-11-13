@@ -5,8 +5,7 @@ echo "MST Parser Build System"
 echo "-------------------"
 echo
 
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
-export PATH=$PATH:/home/ubuntu/workspace/io-rnn/tools/mstparser/
+export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk.x86_64
 
 if [ "$JAVA_HOME" = "" ] ; then
   echo "ERROR: JAVA_HOME not found in your environment."

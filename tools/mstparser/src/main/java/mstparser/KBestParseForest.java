@@ -125,14 +125,16 @@ public class KBestParseForest {
   }
 
   public Object[][] getBestParses() {
-    Object[][] d = new Object[K][2];
+    Object[][] d = new Object[K][3];
     for (int k = 0; k < K; k++) {
       if (chart[0][end][0][0][k].prob != Double.NEGATIVE_INFINITY) {
         d[k][0] = getFeatureVector(chart[0][end][0][0][k]);
         d[k][1] = getDepString(chart[0][end][0][0][k]);
+        d[k][2] = chart[0][end][0][0][k].prob;
       } else {
         d[k][0] = null;
         d[k][1] = null;
+        d[k][2] = 0.0;
       }
     }
     return d;
